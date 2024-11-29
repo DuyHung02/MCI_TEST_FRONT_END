@@ -1,0 +1,9 @@
+.btnSubmit {
+    text-align: center;
+}
+
+.errorMessage {
+    font-weight: 500;
+    font-size: 14px;
+    color: #ff4d4f;
+}

@@ -1,3 +1,5 @@
+import { ICustomField } from '@/types';
+
 export type IUserState = {
   username?: string;
 };
@@ -12,11 +14,26 @@ export type ILogin = {
   password: string;
 };
 
-export type ILoginComponent = {
-  onSubmit: (payload: ILogin) => void;
+export type IRegister = {
+  username: string;
+  password: string;
+  passwordConfirm?: string;
+};
+
+export type IAuthComponent<T> = {
+  authType: IAuthType;
+  fields: ICustomField<T>[];
+  onSubmit: (payload: T) => void;
 };
 
 export type IResponseLogin = {
   access_token: string;
   user: IUserState;
 };
+
+export const AuthType = {
+  LOGIN: 'login',
+  REGISTER: 'register',
+} as const;
+
+export type IAuthType = (typeof AuthType)[keyof typeof AuthType];

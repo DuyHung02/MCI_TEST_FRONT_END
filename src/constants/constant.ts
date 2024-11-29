@@ -9,3 +9,6 @@ export const MIN_PASSWORD_LENGTH = 6;
 export const NETWORK_ERROR_CODE = 500;
 
 export const MESSAGE_NETWORK_ERROR = 'Server Error!';
+
+export const TITLE_LOGIN = 'Đăng nhập';
+export const TITLE_REGISTER = 'Đăng ký';

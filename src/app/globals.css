@@ -239,3 +239,16 @@ body .ant-input {
   display: flex;
   flex-direction: column;
 }
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-btn-variant-solid {
+  background-color: #BD8306 !important;
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-btn-variant-solid:hover {
+  background-color: #dd9904 !important;
+}
+
+:where(.css-dev-only-do-not-override-1x0dypw).ant-form-item .ant-form-item-explain-error {
+  color: #ff4d4f;
+  font-weight: 500;
+}
