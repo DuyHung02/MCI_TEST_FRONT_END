@@ -71,8 +71,7 @@ body .ant-input {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 56px;
-  padding: 4rem 7rem;
+  padding: 2rem 2rem;
   min-height: calc(100vh - 64px);
 }
 

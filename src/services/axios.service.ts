@@ -70,15 +70,15 @@ export function addResponseInterceptor(instance: AxiosInstance) {
       return response;
     },
     (error: AxiosError) => {
-      if (error?.response?.status === 401) {
-        if (window.location.pathname !== '/auth/login') {
-          localStorage.clear();
-          window.location.replace('/auth/login');
-          toast.error('You signed in from another location!', {
-            position: 'top-right',
-          });
-        }
-      }
+      // if (error?.response?.status === 401) {
+      //   if (window.location.pathname !== '/auth/login') {
+      //     localStorage.clear();
+      //     window.location.replace('/auth/login');
+      //     toast.error('You signed in from another location!', {
+      //       position: 'top-right',
+      //     });
+      //   }
+      // }
       if (
         error?.response?.status === 500 ||
         (error.code && +error.code === NETWORK_ERROR_CODE)

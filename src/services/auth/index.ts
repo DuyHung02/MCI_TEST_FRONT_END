@@ -7,7 +7,7 @@ import { MESSAGE_NETWORK_ERROR } from '@/constants/constant';
 
 export const apiLogin = async (payload: ILogin) => {
   try {
-    return await axiosInstance.post(`user-login/`, payload);
+    return await axiosInstance.post(`/user-login/`, payload);
   } catch (error) {
     if (axios.isAxiosError(error)) {
       return {
@@ -24,7 +24,7 @@ export const apiLogin = async (payload: ILogin) => {
 
 export const apiRegister = async (payload: IRegister) => {
   try {
-    return await axiosInstance.post(`user-login/`, payload);
+    return await axiosInstance.post(`/create-user-account/`, payload);
   } catch (error) {
     if (axios.isAxiosError(error)) {
       return {

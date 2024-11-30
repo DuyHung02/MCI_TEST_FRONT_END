@@ -7,3 +7,8 @@
     font-size: 14px;
     color: #ff4d4f;
 }
+
+.textLink {
+    text-align: end;
+    margin-bottom: 15px;
+}

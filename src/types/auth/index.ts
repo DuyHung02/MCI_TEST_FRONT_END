@@ -23,6 +23,8 @@ export type IRegister = {
 export type IAuthComponent<T> = {
   authType: IAuthType;
   fields: ICustomField<T>[];
+  onClickLink?: () => void;
+  onChange?: () => void;
   onSubmit: (payload: T) => void;
 };
 

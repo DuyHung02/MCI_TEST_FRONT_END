@@ -12,6 +12,7 @@ import { ICustomField } from '@/types';
 
 const LoginPage = () => {
   const [messageError, setMessageError] = useState<string>('');
+
   const dispatch = useDispatch();
   const { push } = useRouter();
 
@@ -19,14 +20,12 @@ const LoginPage = () => {
     (): ICustomField<ILogin>[] => [
       {
         field: 'username',
-        // label: 'Tài khoản',
         placeholder: 'Tài khoản',
         messageError: messageError,
         rules: [{ required: true, message: 'Hãy nhập tài khoản của bạn!' }],
       },
       {
         field: 'password',
-        // label: 'Mật khẩu',
         placeholder: 'Mật khẩu',
         rules: [{ required: true, message: 'Hãy nhập mật khẩu của bạn!' }],
       },
@@ -47,9 +46,11 @@ const LoginPage = () => {
   return (
     <div className="container-fluid">
       <div className={styles.loginForm}>
-        <div className="mb-5-p text-center">Đăng nhập</div>
+        <div className={`${styles.title} mb-5-p text-center`}>Đăng nhập</div>
         <AuthComponent
           authType={AuthType.LOGIN}
+          onClickLink={() => push('/auth/register')}
+          onChange={() => setMessageError('')}
           fields={initialFieldsLogin}
           onSubmit={handleLogin}
         />
