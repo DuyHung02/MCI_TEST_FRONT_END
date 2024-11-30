@@ -3,6 +3,9 @@ export const DEFAULT_PAGE = 1;
 
 export const FORMAT_DATE_SLASH = 'YYYY/MM/DD';
 export const FORMAT_DATE_DASH = 'YYYY-MM-DD';
+export const FORMAT_DATE_IOS_8601 = 'YYYY-MM-DDTHH:mm:ssZ';
+
+export const FORMAT_HOUR_MINUTE = 'HH:mm';
 
 export const MIN_PASSWORD_LENGTH = 6;
 

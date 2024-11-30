@@ -1,7 +1,6 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { useDispatch, TypedUseSelectorHook, useSelector } from 'react-redux';
 import { persistReducer } from 'redux-persist';
-import { encryptTransform } from 'redux-persist-transform-encrypt';
 import { authReducer } from '@/redux/slices/authSlice';
 import storage from './storages/storage';
 
@@ -10,12 +9,6 @@ const authPersistConfig = {
   key: 'auth',
   storage,
   whitelist: ['user', 'token'],
-  transforms: [
-    encryptTransform({
-      secretKey: process.env.NEXT_PUBLIC_SECRET_KEY_STORAGE || 'CMI_TEST',
-      onError: () => {},
-    }),
-  ],
 };
 
 const rootReducer = combineReducers({

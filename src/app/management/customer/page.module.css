@@ -1,0 +1,45 @@
+.header,
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title {
+  display: flex;
+  font-size: 20px;
+}
+
+.userInfo {
+  display: flex;
+  text-align: right;
+  font-size: 14px;
+}
+
+.customName {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 5px;
+}
+
+.customAvatar {
+  width: 40px !important;
+  height: 50px !important;
+  border-radius: 30px !important;
+}
+
+.customFilter {
+  display: flex;
+}
+
+.customInputSearch {
+  margin-right: 10px !important;
+  width: 350px !important;
+  height: 37px !important;
+}
+
+.containerTable {
+  margin-top: 30px;
+}

@@ -21,7 +21,7 @@ body {
 body * {
   margin: 0;
   font-family: 'Lato', sans-serif !important;
-  font-weight: 600;
+  /*font-weight: 600;*/
 }
 
 body p {
@@ -199,6 +199,14 @@ body .ant-input {
   padding: 15% !important;
 }
 
+.w-80 {
+  width: 80px !important;
+}
+
+.w-100 {
+  width: 100px !important;
+}
+
 .w-95-p {
   width: 95% !important;
 }
@@ -240,14 +248,15 @@ body .ant-input {
 }
 
 :where(.css-dev-only-do-not-override-1x0dypw).ant-btn-variant-solid {
-  background-color: #BD8306 !important;
+  background-color: #bd8306 !important;
 }
 
 :where(.css-dev-only-do-not-override-1x0dypw).ant-btn-variant-solid:hover {
   background-color: #dd9904 !important;
 }
 
-:where(.css-dev-only-do-not-override-1x0dypw).ant-form-item .ant-form-item-explain-error {
+:where(.css-dev-only-do-not-override-1x0dypw).ant-form-item
+  .ant-form-item-explain-error {
   color: #ff4d4f;
   font-weight: 500;
 }

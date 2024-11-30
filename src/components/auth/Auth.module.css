@@ -1,14 +1,14 @@
 .btnSubmit {
-    text-align: center;
+  text-align: center;
 }
 
 .errorMessage {
-    font-weight: 500;
-    font-size: 14px;
-    color: #ff4d4f;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ff4d4f;
 }
 
 .textLink {
-    text-align: end;
-    margin-bottom: 15px;
+  text-align: end;
+  margin-bottom: 15px;
 }

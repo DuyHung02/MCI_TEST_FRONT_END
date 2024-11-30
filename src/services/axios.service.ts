@@ -29,7 +29,7 @@ export function addRequestInterceptor(instance: AxiosInstance) {
   instance.interceptors.request.use(
     (config: InternalAxiosRequestConfig<AxiosRequestConfig>) => {
       let accessToken = '';
-      const dataLocal = localStorage.getItem('auth');
+      const dataLocal = localStorage.getItem('persist:auth');
       if (dataLocal) {
         const tokenData = JSON.parse(dataLocal);
         if (tokenData) {

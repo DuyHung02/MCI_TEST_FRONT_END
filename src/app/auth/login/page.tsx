@@ -36,7 +36,7 @@ const LoginPage = () => {
   const handleLogin = async (payload: ILogin) => {
     const response = await apiLogin(payload);
     if (response?.status === 200) {
-      dispatch(setAuthState(response.data.data));
+      dispatch(setAuthState(response.data));
       push('/management/customer');
     } else {
       setMessageError(response?.data);
